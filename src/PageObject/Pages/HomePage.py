@@ -6,6 +6,8 @@ from selenium.webdriver.common.by import By
 base_url = "https://testautomationpractice.blogspot.com/"
 
 # clase de la pagina con los atributos y funciones
+
+
 class homePage():
 
     # funcion con elementos de la pagina web almacenados en la variable
