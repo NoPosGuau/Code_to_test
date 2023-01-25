@@ -30,7 +30,7 @@ class homePage():
         self.gender_female = "RESULT_RadioButton-7_0"
         self.submit_button = "FSsubmit"
 
-    # funciones con la sintaxys, para encontrar los elementos de la pagina
+    # funciones con la sintaxys para encontrar los elementos de la pagina
     def get_wikipedia_search(self):
         return self.driver.find_element(By.XPATH, self.wikipedia_search)
 
@@ -85,7 +85,7 @@ class homePage():
     def get_submit_button(self):
         return self.driver.find_element(By.ID, self.submit_button)
 
-    # funcion para compartirles los parametros a las funciones, para encontrar los elementos de la pagina
+    # funcion para compartirles los parametros a las funciones para encontrar los elementos de la pagina
     def sign_up(self, first_name, last_name, phone, country, city, email):
         self.switch_to_iframe()
         self.get_first_name().send_keys(first_name)
@@ -96,7 +96,7 @@ class homePage():
         self.get_email().send_keys(email)
         time.sleep(3)
 
-    # funcion para realizar un click en el boton submit encontrado con la sintaxys, para encontrar elementos de la pagina
+    # funcion para realizar un click en el boton submit encontrado con la sintaxys para encontrar elementos de la pagina
     def click_sign_up(self):
         return self.get_submit_button().click()
 
